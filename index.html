@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danish &mdash; AI &times; Cybersecurity Builder</title>
+  <meta name="description" content="I build AI-powered defense systems. Honeypots, EDRs, OSINT bots, deepfake detection, mobile threat intel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dp">
+
+<!-- ── scroll progress bar ─────────────────────────────────────── -->
+<div class="dp-scroll-progress" id="dp-progress"></div>
+
+<!-- ── floating side project counter ───────────────────────────── -->
+<div class="dp-counter" id="dp-counter">
+  <span class="num">00</span><span class="dash">/</span><span class="total">10</span>
+  <div class="lbl" id="dp-counter-lbl">scroll to explore</div>
+</div>
+
+<!-- ── ambient background ──────────────────────────────────────── -->
+<div class="dp-bg" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="dp-grid"></div>
+  <div class="dp-noise"></div>
+</div>
+
+<!-- ── top nav ─────────────────────────────────────────────────── -->
+<header class="dp-nav" id="dp-nav">
+  <a class="dp-brand" href="#top">
+    <span class="dp-mark">D<span class="dp-mark-dot"></span></span>
+    <span class="dp-brand-name">Danish<span>.cyber</span></span>
+  </a>
+  <nav class="dp-nav-links">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="dp-nav-cta">
+    <a href="resume.pdf" download class="dp-link-ghost">Résumé</a>
+    <a href="#contact" class="dp-btn">
+      Hire me
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-hero" id="top">
+  <div class="dp-hero-inner">
+    <div class="dp-hero-pill">
+      <span class="dp-dot"></span>
+      <span>Fresher &middot; Available for cybersecurity roles</span>
+    </div>
+
+    <h1 class="dp-h1">
+      <span class="dp-h1-line">I build</span>
+      <span class="dp-h1-line"><span class="dp-grad-strong">defense systems</span></span>
+      <span class="dp-h1-line">with AI inside.</span>
+    </h1>
+
+    <p class="dp-lede">
+      I'm a <b>cybersecurity &amp; AI builder</b>. I learn by shipping &mdash; so
+      I've spent the last year building real systems end-to-end: a deception
+      honeypot, a Windows EDR, an Android bodyguard, an OSINT bot, a pentest
+      toolkit, and more. Each one runs. Each one's mine.
+    </p>
+
+    <div class="dp-hero-ctas">
+      <a href="#projects" class="dp-btn dp-btn-lg">
+        Open the arsenal
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="resume.pdf" download class="dp-btn dp-btn-lg dp-btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/></svg>
+        Résumé
+      </a>
+    </div>
+
+    <div class="dp-trust">
+      <span>Stack</span>
+      <strong>Python</strong><span class="sep"></span>
+      <strong>Flutter</strong><span class="sep"></span>
+      <strong>Gemini</strong><span class="sep"></span>
+      <strong>Claude</strong><span class="sep"></span>
+      <strong>Flask</strong><span class="sep"></span>
+      <strong>Firebase</strong>
+    </div>
+  </div>
+
+  <!-- CYBER WARFARE scene — attacks vs defense, live -->
+  <div class="dp-hero-art" aria-hidden="true">
+    <!-- expanding defense waves -->
+    <div class="war-defense">
+      <span class="wd-wave w1"></span>
+      <span class="wd-wave w2"></span>
+      <span class="wd-wave w3"></span>
+      <span class="wd-wave w4"></span>
+    </div>
+
+    <!-- orbital rings -->
+    <div class="dp-ring dp-ring-1"></div>
+    <div class="dp-ring dp-ring-2"></div>
+    <div class="dp-ring dp-ring-3"></div>
+
+    <!-- central defense core (hex shield) -->
+    <div class="war-core">
+      <span class="war-core-hex"></span>
+      <span class="war-core-pulse"></span>
+      <span class="war-core-inner">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+          <path d="M12 2l8 4.5v9L12 22l-8-6.5v-9z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </span>
+      <span class="war-core-spark s1"></span>
+      <span class="war-core-spark s2"></span>
+      <span class="war-core-spark s3"></span>
+    </div>
+
+    <!-- incoming attack vectors -->
+    <span class="war-attack a1"></span>
+    <span class="war-attack a2"></span>
+    <span class="war-attack a3"></span>
+    <span class="war-attack a4"></span>
+    <span class="war-attack a5"></span>
+    <span class="war-attack a6"></span>
+
+    <!-- threat labels floating around -->
+    <span class="war-label l1">T1190 · attempted</span>
+    <span class="war-label l2">T1083 · contained</span>
+    <span class="war-label l3">T1110 · blocked</span>
+    <span class="war-label l4 war-label-ok">DEFENDED</span>
+
+    <!-- floating code chips -->
+    <div class="dp-code-chip dp-chip-1">
+      <span class="kw">def</span> trap(<span class="kw">attacker</span>):<br>
+      &nbsp;&nbsp;<span class="st">"profile, fingerprint, mitre."</span><br>
+      &nbsp;&nbsp;<span class="kw">return</span> Watcher.observe(attacker)
+    </div>
+    <div class="dp-code-chip dp-chip-2">
+      <span class="cm"># 47 MITRE ATT&amp;CK</span><br>
+      <span class="cm"># techniques mapped</span><br>
+      <span class="kw">status</span>: <span class="ok">contained</span>
+    </div>
+  </div>
+
+  <a class="dp-scroll-cue" href="#stats" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MEET DANISH — cinematic intro
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-meet" id="meet">
+  <div class="dp-meet-bg" aria-hidden="true">
+    <div class="meet-grain"></div>
+    <div class="meet-letterbox top"></div>
+    <div class="meet-letterbox bottom"></div>
+  </div>
+
+  <div class="dp-meet-inner reveal">
+    <div class="dp-meet-cue">DOSSIER &middot; 2026 &middot; CLASSIFIED</div>
+    <div class="dp-meet-stamp">CASE FILE #01</div>
+
+    <div class="dp-meet-grid">
+      <!-- LEFT: avatar / silhouette card -->
+      <div class="dp-meet-card">
+        <div class="dp-meet-frame">
+          <span class="meet-c meet-c-tl"></span><span class="meet-c meet-c-tr"></span>
+          <span class="meet-c meet-c-bl"></span><span class="meet-c meet-c-br"></span>
+          <div class="dp-meet-avatar">
+            <div class="meet-avatar-ring r1"></div>
+            <div class="meet-avatar-ring r2"></div>
+            <div class="meet-avatar-glyph">D</div>
+            <div class="meet-avatar-scan"></div>
+          </div>
+          <div class="dp-meet-meta">
+            <div class="meet-meta-row"><span>CODENAME</span><b>DANISH</b></div>
+            <div class="meet-meta-row"><span>DOMAIN</span><b>AI × CYBERSECURITY</b></div>
+            <div class="meet-meta-row"><span>STATUS</span><b class="hud-ok">FRESHER &middot; AVAILABLE</b></div>
+            <div class="meet-meta-row"><span>SHIPPED</span><b>10 SYSTEMS &middot; SOLO</b></div>
+            <div class="meet-meta-row"><span>CRED</span><b>CORIZO · L&amp;T × SONY</b></div>
+            <div class="meet-meta-row"><span>INTERNSHIP</span><b>CORIZO &middot; PENTEST</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: kinetic title + bio -->
+      <div class="dp-meet-text">
+        <div class="meet-eyebrow">
+          <span class="meet-eyebrow-dot"></span>
+          MEET THE BUILDER
+        </div>
+        <h2 class="dp-meet-h">
+          <span class="meet-h-row">
+            <span class="meet-h-letter">M</span><span class="meet-h-letter">E</span>
+            <span class="meet-h-letter">E</span><span class="meet-h-letter">T</span>
+          </span>
+          <span class="meet-h-name">
+            <span class="meet-h-letter">D</span><span class="meet-h-letter">A</span>
+            <span class="meet-h-letter">N</span><span class="meet-h-letter">I</span>
+            <span class="meet-h-letter">S</span><span class="meet-h-letter">H</span>
+          </span>
+        </h2>
+
+        <p class="dp-meet-lede">
+          <em>"I learn by building &mdash; so I started building."</em>
+        </p>
+
+        <div class="dp-meet-bio">
+          <p>
+            I'm a <b>cybersecurity &amp; AI builder</b> from India. Over the
+            last year I've built <b>10 real systems</b> end-to-end &mdash; a
+            deception honeypot, a Windows EDR, an Android bodyguard, an OSINT
+            bot, a penetration-testing toolkit, a voice-enabled cyber tutor,
+            and more. I also completed a hands-on <b>cybersecurity internship
+            with Corizo</b> (penetration testing) and delivered production
+            Android work via <b>L&amp;T for client Sony</b>.
+          </p>
+          <p>
+            I'm a fresher &mdash; what I lack in years on a job, I've put into
+            shipping. Every project below is a real system: I wrote the code,
+            designed the UX, ran the QA, and pushed it live.
+          </p>
+        </div>
+
+        <div class="dp-meet-chips">
+          <div class="meet-chip">
+            <span class="chip-ic">🛡</span>
+            <div><b>Offensive &amp; Defensive</b><span>OSINT, pentest, EDR, deception</span></div>
+          </div>
+          <div class="meet-chip">
+            <span class="chip-ic">🤖</span>
+            <div><b>AI-native</b><span>Gemini · Claude · Vision · Voice</span></div>
+          </div>
+          <div class="meet-chip">
+            <span class="chip-ic">📦</span>
+            <div><b>Production-grade</b><span>Real client work via L&amp;T × Sony</span></div>
+          </div>
+        </div>
+
+        <div class="dp-meet-tape">
+          ⟶ &nbsp; INDIA &middot; FRESHER &middot; OPEN TO REMOTE &amp; ON-SITE &middot; CYBERSECURITY ROLES
+          &nbsp; ⟶ &nbsp; INDIA &middot; FRESHER &middot; OPEN TO REMOTE &amp; ON-SITE &middot; CYBERSECURITY ROLES
+          &nbsp; ⟶ &nbsp; INDIA &middot; FRESHER &middot; OPEN TO REMOTE &amp; ON-SITE &middot; CYBERSECURITY ROLES
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     STATS
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-stats reveal" id="stats">
+  <div class="dp-stat">
+    <div class="num" data-target="9">0</div>
+    <div class="lbl">Shipped solo</div>
+  </div>
+  <div class="dp-stat">
+    <div class="num" data-target="47" data-suffix="+">0</div>
+    <div class="lbl">MITRE ATT&amp;CK techniques mapped</div>
+  </div>
+  <div class="dp-stat">
+    <div class="num" data-target="60000" data-suffix="+">0</div>
+    <div class="lbl">Lines of code, solo</div>
+  </div>
+  <div class="dp-stat">
+    <div class="num" data-target="100" data-suffix="%">0</div>
+    <div class="lbl">End-to-end, no team</div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     PROJECTS SHOWCASE — vertical cinematic scroll
+     ══════════════════════════════════════════════════════════════ -->
+<div class="dp-showcase" id="projects">
+
+  <div class="dp-showcase-intro reveal">
+    <span class="dp-eyebrow">THE ARSENAL</span>
+    <h2 class="dp-h2-mega">Ten builds.<br>Built solo. <span class="dp-grad-strong">Shipped real.</span></h2>
+    <p class="dp-section-lede">Scroll through. Each project below has its own scene &mdash; the way a product launch should be.</p>
+  </div>
+
+  <!-- ── 01 · MIRAX ─────────────────────────────────────────── -->
+  <section class="dp-scene scene-mirax reveal" data-idx="01" data-name="MIRAX" id="p-mirax">
+    <div class="scene-bg scene-bg-mirax"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">01 / FLAGSHIP</div>
+        <h2 class="scene-h"><span class="scene-h-1">MIRAX</span></h2>
+        <p class="scene-tag">AI-Powered Deception Honeypot</p>
+        <p class="scene-1liner">An attacker breaches. The walls don't fight back &mdash; they <em>shift</em>.</p>
+        <p class="scene-desc">
+          Two AIs run the trap. The <b>Illusionist</b> conjures an endless fake
+          Fortune-500 company &mdash; new employees, new docs, new departments
+          generated on demand. The <b>Watcher</b> silently profiles the attacker
+          and maps every action to MITRE ATT&amp;CK.
+        </p>
+        <div class="scene-stats">
+          <div><b>$95B</b><span>fake market cap</span></div>
+          <div><b>62,500</b><span>AI employees</span></div>
+          <div><b>47+</b><span>MITRE techniques</span></div>
+        </div>
+        <div class="scene-tags">
+          <span>Python</span><span>Flask</span><span>Google Gemini</span>
+          <span>MITRE ATT&amp;CK</span><span>Deception Tech</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+          <a href="#" class="scene-link">Live Demo Coming →</a>
+        </div>
+      </div>
+
+      <!-- BROWSER MOCKUP showing fake Aegis Dynamics site -->
+      <div class="scene-art">
+        <!-- 2035 HUD layer -->
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-mirax">
+            <span class="hud-dot"></span> REALITY.LAYER &middot; 0x<span class="tick" data-low="40" data-high="99">47</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            ILLUSION.DEPTH = <span class="tick-inf">∞</span><br>
+            ATTACKER.AWARE = <span class="hud-false">false</span><br>
+            WATCHER.LOG = <span class="tick" data-low="1200" data-high="9999">4731</span>
+          </div>
+        </div>
+
+        <!-- dimensional rift -->
+        <div class="rift rift-mirax"></div>
+
+        <!-- orbital rings behind the mockup -->
+        <div class="orbital orbital-mirax">
+          <span class="orb-ring"></span>
+          <span class="orb-ring"></span>
+          <span class="orb-ring"></span>
+        </div>
+
+        <!-- illusion: fanned shadow browsers behind the active one -->
+        <div class="illusion-stack">
+          <div class="illusion-ghost g-a"></div>
+          <div class="illusion-ghost g-b"></div>
+          <div class="illusion-ghost g-c"></div>
+
+          <!-- main LIVE mockup — content MORPHS via JS -->
+          <div class="mock-browser float-y illusion-live" id="illusion-browser">
+            <span class="mock-scan"></span>
+            <div class="mb-bar">
+              <span class="mb-d"></span><span class="mb-d"></span><span class="mb-d"></span>
+              <div class="mb-url">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span class="illusion-domain" data-illusion="domain">aegis-dynamics.com</span>
+              </div>
+            </div>
+            <div class="mb-body mb-aegis">
+              <div class="mb-hero">
+                <div class="mb-h-eyebrow">
+                  <span data-illusion="ticker">NYSE: ADX</span> &middot;
+                  $<span data-illusion="cap">95.2</span>B Market Cap
+                </div>
+                <div class="mb-h-title glitch-text" data-text="Securing Tomorrow's Horizon.">
+                  <span data-illusion="title-1">Securing</span><br>
+                  <span data-illusion="title-2">Tomorrow's Horizon.</span>
+                </div>
+                <div class="mb-h-btn">Employee Portal →</div>
+              </div>
+              <div class="mb-stats">
+                <div><b data-illusion="people">62,500</b><span>People</span></div>
+                <div><b data-illusion="offices">42</b><span>Offices</span></div>
+                <div><b>$<span data-illusion="rev">48</span>B</b><span>Revenue</span></div>
+              </div>
+            </div>
+            <div class="mb-watcher">
+              <div class="wt-head">
+                <span class="wt-live"></span> WATCHER &middot; live
+              </div>
+              <div class="wt-row" id="wt-feed-0"><span class="wt-tag wt-tag-d">T1190</span> &middot; Exploit Public-Facing App</div>
+              <div class="wt-row" id="wt-feed-1"><span class="wt-tag wt-tag-w">T1083</span> &middot; File &amp; Directory Discovery</div>
+              <div class="wt-row" id="wt-feed-2"><span class="wt-tag wt-tag-d">T1110</span> &middot; Brute Force</div>
+            </div>
+
+            <!-- attacker cursor floating over the illusion -->
+            <span class="illusion-cursor">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M5 2l14 9-7 1 4 8-3 1-4-8-4 5z" fill="#ff5474" stroke="#fff" stroke-width="1"/>
+              </svg>
+              <span class="ic-pulse"></span>
+            </span>
+
+            <!-- regeneration flash (fires when content morphs) -->
+            <span class="illusion-flash" id="illusion-flash"></span>
+            <!-- glitch shards -->
+            <span class="illusion-shard sh1"></span>
+            <span class="illusion-shard sh2"></span>
+          </div>
+        </div>
+
+        <!-- floating runes -->
+        <span class="rune rune-1">ᛗ</span>
+        <span class="rune rune-2">⟁</span>
+        <span class="rune rune-3">◈</span>
+
+        <div class="scene-glow scene-glow-mirax"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 02 · HEIMDALL (now with AEGIS as Module 3) ──────────── -->
+  <section class="dp-scene scene-heimdall scene-reverse reveal" data-idx="02" data-name="HEIMDALL" id="p-heimdall">
+    <div class="scene-bg scene-bg-heimdall"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">02</div>
+        <h2 class="scene-h"><span class="scene-h-1">HEIMDALL</span></h2>
+        <p class="scene-tag">AI Digital Bodyguard &middot; Windows EDR</p>
+        <p class="scene-1liner">The Asgardian gatekeeper &mdash; for your laptop.</p>
+        <p class="scene-desc">
+          A system-level Windows EDR built in Python. Watches every process,
+          every connection, every file. When something hostile shows up, it
+          doesn't ask &mdash; it <b>kills, quarantines, blocks, and removes</b>
+          autonomously.
+        </p>
+        <div class="scene-module">
+          <div class="sm-head">
+            <span class="sm-tag">MODULE 3</span> AEGIS &middot; Human Shield
+          </div>
+          <p class="sm-desc">
+            Inside HEIMDALL lives <b>AEGIS</b> &mdash; the layer that protects
+            the human, not just the machine. NLP-powered scam-pattern
+            detection. Deepfake audio fingerprinting. Stops the manipulation
+            before it lands.
+          </p>
+        </div>
+        <div class="scene-stats">
+          <div><b>5</b><span>defense modes</span></div>
+          <div><b>3</b><span>modules (Sword · Watch · AEGIS)</span></div>
+          <div><b>1.8s</b><span>avg containment</span></div>
+        </div>
+        <div class="scene-tags">
+          <span>Python</span><span>Windows API</span><span>EDR</span>
+          <span>Active Defense</span><span>NLP</span><span>Deepfake Detection</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- TERMINAL + AEGIS overlay -->
+      <div class="scene-art">
+        <!-- HUD -->
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-heimdall">
+            <span class="hud-dot"></span> GUARD.MODE &middot; <span class="hud-ok">ACTIVE</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            THREATS.TODAY = <span class="tick" data-low="2" data-high="9">3</span><br>
+            MITRE.COVERAGE = <span class="tick" data-low="38" data-high="51">47</span><br>
+            UPTIME = <span class="tick" data-low="800" data-high="999">847</span>h
+          </div>
+        </div>
+
+        <div class="orbital orbital-heimdall">
+          <span class="orb-ring"></span>
+          <span class="orb-ring"></span>
+          <span class="orb-ring"></span>
+        </div>
+
+        <!-- Heimdall's eye -->
+        <div class="hd-eye">
+          <span class="hd-eye-iris"></span>
+          <span class="hd-eye-pupil"></span>
+        </div>
+
+        <div class="mock-term float-y">
+          <span class="mock-scan"></span>
+          <div class="mt-bar">
+            <span class="mb-d"></span><span class="mb-d"></span><span class="mb-d"></span>
+            <div class="mt-title">heimdall :: guard-mode :: live</div>
+          </div>
+          <div class="mt-body">
+            <div class="mt-line"><span class="mt-ok">[OK]</span> <span class="mt-dim">SCAN</span> 247 processes &middot; <span class="mt-cy">clean</span></div>
+            <div class="mt-line"><span class="mt-warn">[!!]</span> <span class="mt-dim">DETECT</span> child: <span class="mt-cy">powershell.exe -enc *</span></div>
+            <div class="mt-line"><span class="mt-warn">[!!]</span> <span class="mt-dim">CLASSIFY</span> = <span class="mt-red">obfuscated_command</span></div>
+            <div class="mt-line"><span class="mt-red">[X]</span>  <span class="mt-dim">KILL</span> pid 8421 &middot; <span class="mt-red">terminated</span></div>
+            <div class="mt-line"><span class="mt-red">[X]</span>  <span class="mt-dim">QUARANTINE</span> binary → /heimdall/quar/</div>
+            <div class="mt-line"><span class="mt-warn">[!!]</span> <span class="mt-dim">BLOCK</span> 198.51.100.42:443 out</div>
+            <div class="mt-line"><span class="mt-cy">[AEGIS]</span> <span class="mt-dim">SCAN-MSG</span> "gift-card scam" &middot; <span class="mt-red">blocked</span></div>
+            <div class="mt-line"><span class="mt-ok">[OK]</span> <span class="mt-dim">REPORT</span> contained &middot; <span class="mt-cy">1.8s</span></div>
+            <div class="mt-cursor"></div>
+          </div>
+          <div class="mt-footer">
+            <span class="mt-pill mt-pill-ok"><span class="mt-dot"></span> GUARD MODE</span>
+            <span class="mt-pill mt-pill-aegis">⚞ AEGIS module 3</span>
+          </div>
+        </div>
+
+        <!-- Bifrost spectrum bar -->
+        <div class="bifrost-bar">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="scene-glow scene-glow-heimdall"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 03 · HEIMDALL GUARD ────────────────────────────────── -->
+  <section class="dp-scene scene-guard reveal" data-idx="03" data-name="HEIMDALL GUARD" id="p-guard">
+    <div class="scene-bg scene-bg-guard"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">03</div>
+        <h2 class="scene-h"><span class="scene-h-1">HEIMDALL Guard</span></h2>
+        <p class="scene-tag">Android Mobile Bodyguard</p>
+        <p class="scene-1liner">Your phone, watched. RATs exposed. One tap &mdash; gone.</p>
+        <p class="scene-desc">
+          Built in Flutter. App Audit catches RATs and spyware by their permission
+          fingerprint. Threat Diary keeps a Hive-backed log of what each app
+          actually does. One tap to uninstall malicious apps. Shipped APK.
+        </p>
+        <div class="scene-tags">
+          <span>Flutter</span><span>Android</span><span>Hive</span>
+          <span>Permission Audit</span><span>RAT Detection</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- PHONE mockup with permission audit results -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-guard">
+            <span class="hud-dot"></span> SCAN.MODE &middot; <span class="hud-ok">live</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            APPS.AUDITED = <span class="tick" data-low="40" data-high="180">96</span><br>
+            RISKS.FLAGGED = <span class="tick" data-low="1" data-high="9">3</span>
+          </div>
+        </div>
+        <div class="orbital orbital-guard"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+        <div class="mock-phone float-y">
+          <span class="mp-notch"></span>
+          <div class="mp-screen mp-guard">
+            <div class="mp-bar"><span></span><span></span><span></span></div>
+            <div class="mp-title">App Audit <span>3 risks</span></div>
+            <div class="mp-app">
+              <div class="mp-ic mp-ic-red">!</div>
+              <div class="mp-info">
+                <b>com.unknown.bg</b>
+                <span>SMS &middot; Camera &middot; Mic &middot; Location</span>
+              </div>
+              <div class="mp-tag mp-tag-red">RAT</div>
+            </div>
+            <div class="mp-app">
+              <div class="mp-ic mp-ic-orange">⚠</div>
+              <div class="mp-info">
+                <b>flashlite.app</b>
+                <span>Contacts &middot; Storage</span>
+              </div>
+              <div class="mp-tag mp-tag-orange">SUS</div>
+            </div>
+            <div class="mp-app">
+              <div class="mp-ic mp-ic-orange">⚠</div>
+              <div class="mp-info">
+                <b>QR.scanner.pro</b>
+                <span>Camera &middot; Location &middot; Mic</span>
+              </div>
+              <div class="mp-tag mp-tag-orange">SUS</div>
+            </div>
+            <div class="mp-cta">
+              <span class="mp-scan-line"></span>
+              Uninstall all flagged
+            </div>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-guard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 04 · AURA ──────────────────────────────────────────── -->
+  <section class="dp-scene scene-aura scene-reverse reveal" data-idx="04" data-name="AURA" id="p-aura">
+    <div class="scene-bg scene-bg-aura"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">04</div>
+        <h2 class="scene-h"><span class="scene-h-1">AURA</span></h2>
+        <p class="scene-tag">AI Universal Scanner (Flutter)</p>
+        <p class="scene-1liner">Point your camera at anything. Get the answer.</p>
+        <p class="scene-desc">
+          Food, faces, barcodes, "best pic" mode &mdash; one app, many lenses.
+          Backed by a Claude Sonnet → Opus → Haiku server-side fallback chain
+          so it never times out. Live on a real device.
+        </p>
+        <div class="scene-tags">
+          <span>Flutter</span><span>Claude</span><span>Firebase</span>
+          <span>Vision Models</span><span>Production</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- PHONE mockup showing scan result -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-aura">
+            <span class="hud-dot"></span> VISION.AI &middot; <span class="hud-ok">locked</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            CONFIDENCE = <span class="tick" data-low="92" data-high="99">96</span>%<br>
+            MODELS.READY = sonnet/opus/haiku
+          </div>
+        </div>
+        <div class="orbital orbital-aura"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+        <div class="mock-phone float-y">
+          <span class="mp-notch"></span>
+          <div class="mp-screen mp-aura">
+            <div class="mp-cam">
+              <div class="mp-cam-target"></div>
+              <span class="mp-cam-c c1"></span><span class="mp-cam-c c2"></span>
+              <span class="mp-cam-c c3"></span><span class="mp-cam-c c4"></span>
+              <div class="mp-cam-emoji">🥗</div>
+              <div class="mp-cam-scan"></div>
+            </div>
+            <div class="mp-result">
+              <div class="mp-r-h">Greek Salad &middot; <span>485 cal</span></div>
+              <div class="mp-r-row"><span>Protein</span><b>14g</b></div>
+              <div class="mp-r-row"><span>Carbs</span><b>22g</b></div>
+              <div class="mp-r-row"><span>Fat</span><b>38g</b></div>
+              <div class="mp-r-row mp-r-row-ok"><span>Score</span><b>9.2 / 10</b></div>
+            </div>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-aura"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 05 · SPIDY ─────────────────────────────────────────── -->
+  <section class="dp-scene scene-spidy reveal" data-idx="05" data-name="SPIDY" id="p-spidy">
+    <div class="scene-bg scene-bg-spidy"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">05</div>
+        <h2 class="scene-h"><span class="scene-h-1">SPIDY</span></h2>
+        <p class="scene-tag">OSINT Telegram Bot</p>
+        <p class="scene-1liner">One username. Sixteen sources. The full picture surfaces.</p>
+        <p class="scene-desc">
+          14 features. AI Security Analyst (Gemini). EXIF + landmark intel.
+          Identity-graph PNG generation. Auto-rendered PDF report. 100% free
+          APIs. Built solo over two days.
+        </p>
+        <div class="scene-tags">
+          <span>Python</span><span>Telegram</span><span>OSINT</span>
+          <span>Gemini</span><span>NetworkX</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- IDENTITY GRAPH mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-spidy">
+            <span class="hud-dot"></span> WEB.TRACE &middot; <span class="hud-ok">8 srcs</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            NODES = <span class="tick" data-low="6" data-high="22">14</span><br>
+            CONFIDENCE = <span class="tick" data-low="80" data-high="98">91</span>%
+          </div>
+        </div>
+        <div class="orbital orbital-spidy"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+        <div class="mock-graph float-y">
+          <svg viewBox="0 0 400 280">
+            <defs>
+              <radialGradient id="g-spidy-c" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#a8d4ff" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#5e3aff" stop-opacity="0.8"/>
+              </radialGradient>
+            </defs>
+            <line x1="200" y1="140" x2="80"  y2="50"  stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="200" y1="140" x2="330" y2="60"  stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="200" y1="140" x2="60"  y2="160" stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="200" y1="140" x2="340" y2="200" stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="200" y1="140" x2="120" y2="240" stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="200" y1="140" x2="280" y2="240" stroke="rgba(160,140,255,0.4)" stroke-width="1.4"/>
+            <line x1="80"  y1="50"  x2="40"  y2="100" stroke="rgba(160,140,255,0.25)" stroke-width="1"/>
+            <line x1="330" y1="60"  x2="380" y2="120" stroke="rgba(160,140,255,0.25)" stroke-width="1"/>
+
+            <g class="sp-node sp-n-c">
+              <circle cx="200" cy="140" r="26" fill="url(#g-spidy-c)"/>
+              <text x="200" y="145" text-anchor="middle" font-family="Inter" font-weight="800" font-size="11" fill="#fff">danish</text>
+            </g>
+            <g class="sp-node"><circle cx="80"  cy="50"  r="14" fill="#5e3aff"/><text x="80"  y="54"  text-anchor="middle" font-size="9" fill="#fff" font-weight="700">GH</text></g>
+            <g class="sp-node"><circle cx="330" cy="60"  r="14" fill="#5e3aff"/><text x="330" y="64"  text-anchor="middle" font-size="9" fill="#fff" font-weight="700">in</text></g>
+            <g class="sp-node"><circle cx="60"  cy="160" r="14" fill="#5e3aff"/><text x="60"  y="164" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">X</text></g>
+            <g class="sp-node"><circle cx="340" cy="200" r="14" fill="#5e3aff"/><text x="340" y="204" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">@</text></g>
+            <g class="sp-node"><circle cx="120" cy="240" r="14" fill="#5e3aff"/><text x="120" y="244" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">ig</text></g>
+            <g class="sp-node"><circle cx="280" cy="240" r="14" fill="#5e3aff"/><text x="280" y="244" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">f</text></g>
+            <g class="sp-node sp-n-leaf"><circle cx="40"  cy="100" r="6"  fill="#a8d4ff"/></g>
+            <g class="sp-node sp-n-leaf"><circle cx="380" cy="120" r="6"  fill="#a8d4ff"/></g>
+          </svg>
+          <div class="sp-graph-caption">Identity Graph &middot; auto-generated</div>
+        </div>
+        <div class="scene-glow scene-glow-spidy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 06 · CORIZO — PENTEST INTERNSHIP ───────────────────── -->
+  <section class="dp-scene scene-corizo scene-reverse reveal" data-idx="06" data-name="CORIZO" id="p-corizo">
+    <div class="scene-bg scene-bg-corizo"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">06 / INTERNSHIP</div>
+        <h2 class="scene-h"><span class="scene-h-1">CORIZO</span></h2>
+        <p class="scene-tag">Penetration Testing Internship</p>
+        <p class="scene-1liner">Real targets. Real CVEs. Real reports.</p>
+        <p class="scene-desc">
+          A structured cyber-security internship via <b>Corizo</b>. Hands-on
+          penetration testing across web apps, network services, and Linux
+          infrastructure. Built reconnaissance &rarr; exploitation &rarr;
+          remediation workflows. Wrote formal vulnerability reports on assigned
+          lab targets.
+        </p>
+        <div class="scene-stats">
+          <div><b>Web</b><span>+ Network + Linux</span></div>
+          <div><b>Recon → Exploit</b><span>full kill-chain</span></div>
+          <div><b>Reports</b><span>per finding</span></div>
+        </div>
+        <div class="scene-tags">
+          <span>Pentesting</span><span>Nmap</span><span>Metasploit</span>
+          <span>Burp Suite</span><span>Kali Linux</span><span>OWASP</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-ghost">Internship certificate &middot; on request</span>
+        </div>
+      </div>
+
+      <!-- Pentest terminal mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-corizo">
+            <span class="hud-dot"></span> KILL.CHAIN &middot; <span class="hud-ok">recon→exploit</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            VULNS.FOUND = <span class="tick" data-low="4" data-high="22">11</span><br>
+            CVE.MATCHES = <span class="tick" data-low="2" data-high="9">4</span>
+          </div>
+        </div>
+        <div class="orbital orbital-corizo"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+
+        <div class="mock-pentest float-y">
+          <span class="mock-scan"></span>
+          <div class="mt-bar">
+            <span class="mb-d"></span><span class="mb-d"></span><span class="mb-d"></span>
+            <div class="mt-title">kali :: pentest :: target-lab-3</div>
+          </div>
+          <div class="mt-body">
+            <div class="mt-line"><span class="mt-cy">$</span> nmap -sV -A 10.10.11.7</div>
+            <div class="mt-line"><span class="mt-ok">[+]</span> <span class="mt-dim">22/tcp</span>  open  ssh    OpenSSH 7.6p1</div>
+            <div class="mt-line"><span class="mt-ok">[+]</span> <span class="mt-dim">80/tcp</span>  open  http   Apache 2.4.29</div>
+            <div class="mt-line"><span class="mt-warn">[!]</span> <span class="mt-dim">VULN</span>  <span class="mt-red">CVE-2021-41773</span> path traversal</div>
+            <div class="mt-line"><span class="mt-cy">$</span> msfconsole -q -x "use exploit/multi/http/apache_normalize"</div>
+            <div class="mt-line"><span class="mt-ok">[*]</span> <span class="mt-dim">SET</span>   RHOSTS 10.10.11.7</div>
+            <div class="mt-line"><span class="mt-ok">[*]</span> <span class="mt-dim">EXPLOIT</span> &raquo; <span class="mt-cy">session opened</span></div>
+            <div class="mt-line"><span class="mt-warn">[+]</span> <span class="mt-dim">SHELL</span>  www-data@target-lab-3:$</div>
+            <div class="mt-line"><span class="mt-ok">[OK]</span> <span class="mt-dim">REPORT</span> generated &middot; <span class="mt-cy">PDF</span></div>
+            <div class="mt-cursor"></div>
+          </div>
+          <div class="mt-footer">
+            <span class="mt-pill mt-pill-corizo"><span class="mt-dot"></span> CORIZO LAB</span>
+            <span class="mt-pill">11 findings &middot; 4 critical</span>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-corizo"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 07 · COLDBOX — PENTEST TOOLKIT ─────────────────────── -->
+  <section class="dp-scene scene-coldbox reveal" data-idx="07" data-name="COLDBOX" id="p-coldbox">
+    <div class="scene-bg scene-bg-coldbox"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">07</div>
+        <h2 class="scene-h"><span class="scene-h-1">COLDBOX</span></h2>
+        <p class="scene-tag">Penetration Testing Toolkit</p>
+        <p class="scene-1liner">A pentester's notebook &mdash; but it acts.</p>
+        <p class="scene-desc">
+          A custom-built penetration testing toolkit. Automates the boring
+          parts &mdash; recon, port-scan correlation, service fingerprinting,
+          CVE-to-exploit mapping &mdash; so the human can focus on the
+          interesting parts. Built solo as a personal lab project.
+        </p>
+        <div class="scene-stats">
+          <div><b>Auto-recon</b><span>multi-tool orchestrator</span></div>
+          <div><b>CVE-mapping</b><span>service → exploit lookup</span></div>
+          <div><b>Report</b><span>auto-generated</span></div>
+        </div>
+        <div class="scene-tags">
+          <span>Python</span><span>Recon</span><span>Nmap</span>
+          <span>CVE Mapping</span><span>Pentest Automation</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- ColdBox attack-chain mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-coldbox">
+            <span class="hud-dot"></span> CHAIN.STATE &middot; <span class="hud-ok">stage 4/5</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            HOSTS = <span class="tick" data-low="1" data-high="32">8</span><br>
+            EXPLOITS = <span class="tick" data-low="2" data-high="14">5</span>
+          </div>
+        </div>
+        <div class="orbital orbital-coldbox"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+
+        <div class="mock-chain float-y">
+          <div class="mc-head">
+            <span class="mc-tag">COLDBOX</span> kill-chain &middot; live
+          </div>
+          <div class="mc-stage stage-on">
+            <span class="mc-no">01</span>
+            <div class="mc-body"><b>Recon</b><span>Nmap + WhatWeb + DNS</span></div>
+            <span class="mc-dot mc-done"></span>
+          </div>
+          <div class="mc-stage stage-on">
+            <span class="mc-no">02</span>
+            <div class="mc-body"><b>Service map</b><span>22, 80, 443, 3306 &middot; fingerprinted</span></div>
+            <span class="mc-dot mc-done"></span>
+          </div>
+          <div class="mc-stage stage-on">
+            <span class="mc-no">03</span>
+            <div class="mc-body"><b>CVE lookup</b><span>5 matches &middot; 2 critical</span></div>
+            <span class="mc-dot mc-done"></span>
+          </div>
+          <div class="mc-stage stage-on stage-active">
+            <span class="mc-no">04</span>
+            <div class="mc-body"><b>Exploit</b><span>CVE-2021-41773 &middot; running</span></div>
+            <span class="mc-dot mc-live"></span>
+          </div>
+          <div class="mc-stage">
+            <span class="mc-no">05</span>
+            <div class="mc-body"><b>Report</b><span>PDF + JSON &middot; pending</span></div>
+            <span class="mc-dot"></span>
+          </div>
+          <div class="mc-progress">
+            <span class="mc-progress-bar"></span>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-coldbox"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 08 · CYBERMENTOR ───────────────────────────────────── -->
+  <section class="dp-scene scene-cm scene-reverse reveal" data-idx="08" data-name="CYBERMENTOR" id="p-cm">
+    <div class="scene-bg scene-bg-cm"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">08</div>
+        <h2 class="scene-h"><span class="scene-h-1">CyberMentor Elite</span></h2>
+        <p class="scene-tag">Voice-enabled Cyber + Coding Mentor</p>
+        <p class="scene-1liner">Two AIs. One mentor. A classroom that listens back.</p>
+        <p class="scene-desc">
+          Flutter app with two voice-enabled tutors. Coding side: Python, Java,
+          SQL, Bash, C/C++. Cyber side: Network Security, Ethical Hacking,
+          OWASP, Labs, Certs. Talk to it. It talks back.
+        </p>
+        <div class="scene-tags">
+          <span>Flutter</span><span>Gemini</span><span>Voice + TTS</span>
+          <span>Education</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- ORB + WAVE mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-cm">
+            <span class="hud-dot"></span> VOICE.LINK &middot; <span class="hud-ok">on</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            TUTOR = <span class="hud-ok">jarvis</span> + ultron<br>
+            LATENCY = <span class="tick" data-low="180" data-high="420">240</span>ms
+          </div>
+        </div>
+        <div class="mock-orb float-y">
+          <div class="mo-orb">
+            <div class="mo-orb-glow"></div>
+          </div>
+          <div class="mo-rings">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mo-cap">"What's the OWASP Top 10 in 2025?"</div>
+          <div class="mo-wave">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-cm"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 09 · NEURAL LOCK ───────────────────────────────────── -->
+  <section class="dp-scene scene-nl reveal" data-idx="09" data-name="NEURAL LOCK" id="p-nl">
+    <div class="scene-bg scene-bg-nl"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">09</div>
+        <h2 class="scene-h"><span class="scene-h-1">Neural Lock</span></h2>
+        <p class="scene-tag">Android Anti-Theft Honeypot</p>
+        <p class="scene-1liner">A thief picks up your phone. The phone wins.</p>
+        <p class="scene-desc">
+          A fake home screen welcomes whoever's holding your stolen phone.
+          Snaps their photo, grabs GPS, emails you, then warns the intruder.
+          Mobile honeypot &mdash; the cousin to MIRAX.
+        </p>
+        <div class="scene-tags">
+          <span>Android</span><span>Honeypot</span><span>Camera</span>
+          <span>Geo-Intel</span><span>SMTP</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-soon">GitHub &middot; soon</span>
+        </div>
+      </div>
+
+      <!-- thief alert mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-nl">
+            <span class="hud-dot"></span> TRAP.ARMED &middot; <span class="hud-ok">live</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            INTRUDER = <span class="hud-false">UNKNOWN</span><br>
+            EVIDENCE = <span class="tick" data-low="3" data-high="9">5</span> packets sent
+          </div>
+        </div>
+        <div class="orbital orbital-nl"><span class="orb-ring"></span><span class="orb-ring"></span><span class="orb-ring"></span></div>
+        <div class="mock-alert float-y">
+          <div class="ma-head">
+            <span class="ma-ic">📍</span>
+            <div>
+              <b>Neural Lock &middot; Intruder Detected</b>
+              <span>2 minutes ago</span>
+            </div>
+          </div>
+          <div class="ma-photo">
+            <span class="ma-photo-flash"></span>
+            <div class="ma-photo-frame"></div>
+            <div class="ma-photo-cap">📷 captured at 03:42 AM</div>
+          </div>
+          <div class="ma-grid">
+            <div><span>Location</span><b>22.5847°N, 88.4042°E</b></div>
+            <div><span>Battery</span><b>43%</b></div>
+            <div><span>Network</span><b>Jio 4G</b></div>
+            <div><span>Distance</span><b>1.4 km away</b></div>
+          </div>
+          <div class="ma-cta">View on map →</div>
+        </div>
+        <div class="scene-glow scene-glow-nl"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 10 · L&T × SONY ────────────────────────────────────── -->
+  <section class="dp-scene scene-lt scene-reverse reveal" data-idx="10" data-name="L&amp;T × SONY" id="p-lt">
+    <div class="scene-bg scene-bg-lt"></div>
+    <div class="scene-wrap">
+      <div class="scene-text">
+        <div class="scene-num">10 / ENTERPRISE</div>
+        <h2 class="scene-h"><span class="scene-h-1">Eddystone &amp; BLE Scanners</span></h2>
+        <p class="scene-tag">Android &middot; built for Sony via L&amp;T</p>
+        <p class="scene-1liner">Real client. Real production. Real users.</p>
+        <p class="scene-desc">
+          Two production Android applications delivered through <b>Larsen &amp;
+          Toubro</b> for client <b>Sony</b> &mdash; an Eddystone beacon scanner
+          and a Bluetooth BLE/Classic RSSI scanner. Enterprise codebases. Real
+          QA cycles. Shipped.
+        </p>
+        <div class="scene-tags">
+          <span>Android</span><span>Kotlin/Java</span><span>BLE</span>
+          <span>Eddystone</span><span>Enterprise</span>
+        </div>
+        <div class="scene-actions">
+          <span class="scene-link scene-link-ghost">Enterprise client &middot; code private</span>
+        </div>
+      </div>
+
+      <!-- RADAR + BEACONS mockup -->
+      <div class="scene-art">
+        <div class="hud">
+          <span class="hud-c hud-tl"></span><span class="hud-c hud-tr"></span>
+          <span class="hud-c hud-bl"></span><span class="hud-c hud-br"></span>
+          <div class="hud-tag hud-tag-lt">
+            <span class="hud-dot"></span> BLE.SCAN &middot; <span class="hud-ok">live</span>
+          </div>
+          <div class="hud-meta hud-meta-r">
+            BEACONS = <span class="tick" data-low="2" data-high="18">7</span><br>
+            RSSI.MIN = -<span class="tick" data-low="48" data-high="95">68</span> dBm
+          </div>
+        </div>
+        <div class="mock-radar float-y">
+          <div class="mr-frame">
+            <div class="mr-sweep"></div>
+            <span class="mr-ring r1"></span>
+            <span class="mr-ring r2"></span>
+            <span class="mr-ring r3"></span>
+            <span class="mr-blip b1"></span>
+            <span class="mr-blip b2"></span>
+            <span class="mr-blip b3"></span>
+            <span class="mr-blip b4"></span>
+            <span class="mr-center"></span>
+          </div>
+          <div class="mr-feed">
+            <div class="mr-row"><span class="mr-d"></span> Beacon-A1 &middot; -52 dBm</div>
+            <div class="mr-row"><span class="mr-d"></span> Beacon-A2 &middot; -68 dBm</div>
+            <div class="mr-row"><span class="mr-d mr-d-w"></span> Beacon-B7 &middot; -81 dBm</div>
+          </div>
+        </div>
+        <div class="scene-glow scene-glow-lt"></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     ABOUT
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-section" id="about">
+  <div class="dp-about reveal">
+    <div class="dp-eyebrow">ABOUT</div>
+    <h2 class="dp-h2">I like learning by shipping.</h2>
+    <div class="dp-about-grid">
+      <p>
+        I'm a fresher, based in India, looking for cybersecurity engineering
+        roles. I'd love to be judged on the systems I've built, not the years
+        on my CV.
+      </p>
+      <p>
+        I taught myself by building. Honeypots, an EDR, a mobile bodyguard,
+        OSINT tooling, anti-scam protection &mdash; each one written
+        end-to-end. I also completed a hands-on penetration-testing
+        <b>internship with Corizo</b> and delivered production Android work
+        via <b>L&amp;T</b> for client <b>Sony</b>.
+      </p>
+      <p>
+        I want to do this full-time, with a team that builds real defensive
+        tech. I'm happy to start small and grow with the team.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     GITHUB
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-section dp-section-dark" id="github">
+  <div class="dp-gh reveal">
+    <div>
+      <span class="dp-eyebrow dp-eyebrow-light">GITHUB</span>
+      <h2 class="dp-h2">Code lives in the open.</h2>
+      <p class="dp-section-lede" style="color:rgba(255,255,255,0.65);">
+        Repos pushing this week &mdash; case studies + source for each project above.
+      </p>
+      <a href="https://github.com/dmd60484" class="dp-btn dp-btn-lg" style="margin-top:18px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.69-3.87-1.54-3.87-1.54-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.89-.39s1.97.13 2.89.39c2.21-1.49 3.18-1.18 3.18-1.18.62 1.59.23 2.77.11 3.06.73.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        Visit github.com/dmd60484
+      </a>
+    </div>
+    <div class="dp-gh-card">
+      <div class="dp-gh-head">
+        <div class="dp-gh-av">D</div>
+        <div>
+          <div class="dp-gh-name">dmd60484</div>
+          <div class="dp-gh-bio">Solo cybersecurity + AI builder</div>
+        </div>
+      </div>
+      <div class="dp-gh-stats">
+        <div><b>9</b><span>Projects</span></div>
+        <div><b>Daily</b><span>Commits</span></div>
+        <div><b>Solo</b><span>Builder</span></div>
+      </div>
+      <div class="dp-gh-graph" id="dp-gh-graph"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SKILLS
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-section" id="skills">
+  <div class="dp-section-head reveal">
+    <span class="dp-eyebrow">SKILLS</span>
+    <h2 class="dp-h2">What I work with.</h2>
+  </div>
+  <div class="dp-skills reveal">
+    <div class="dp-skill-col">
+      <h4>Languages</h4>
+      <span class="dp-pill">Python</span>
+      <span class="dp-pill">Dart / Flutter</span>
+      <span class="dp-pill">JavaScript</span>
+      <span class="dp-pill">Kotlin / Java</span>
+      <span class="dp-pill">Bash</span>
+      <span class="dp-pill">SQL</span>
+      <span class="dp-pill">C / C++</span>
+    </div>
+    <div class="dp-skill-col">
+      <h4>AI &amp; LLMs</h4>
+      <span class="dp-pill">Google Gemini</span>
+      <span class="dp-pill">Anthropic Claude</span>
+      <span class="dp-pill">Prompt Engineering</span>
+      <span class="dp-pill">Vision Models</span>
+      <span class="dp-pill">Voice + TTS</span>
+    </div>
+    <div class="dp-skill-col">
+      <h4>Cybersecurity</h4>
+      <span class="dp-pill">EDR / Threat Detection</span>
+      <span class="dp-pill">Deception Tech</span>
+      <span class="dp-pill">OSINT</span>
+      <span class="dp-pill">MITRE ATT&amp;CK</span>
+      <span class="dp-pill">OWASP Top 10</span>
+      <span class="dp-pill">Network Security</span>
+      <span class="dp-pill">Ethical Hacking</span>
+      <span class="dp-pill">Mobile Security</span>
+    </div>
+    <div class="dp-skill-col">
+      <h4>Infra &amp; Tools</h4>
+      <span class="dp-pill">Flask</span>
+      <span class="dp-pill">Firebase</span>
+      <span class="dp-pill">Android Studio</span>
+      <span class="dp-pill">Linux / Windows</span>
+      <span class="dp-pill">Git / GitHub</span>
+      <span class="dp-pill">Playwright</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     CONTACT
+     ══════════════════════════════════════════════════════════════ -->
+<section class="dp-cta reveal" id="contact">
+  <div>
+    <span class="dp-eyebrow dp-eyebrow-light">CONTACT</span>
+    <h2 class="dp-h2">Let's build defensive tech &mdash; together.</h2>
+    <p style="color:rgba(255,255,255,0.7);font-size:15.5px;margin-top:8px;">
+      Open to cybersecurity roles &mdash; remote, on-site, or contract.
+    </p>
+  </div>
+  <div class="dp-cta-btns">
+    <a href="mailto:dmd60484@gmail.com" class="dp-btn dp-btn-lg">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg>
+      Email me
+    </a>
+    <a href="https://www.linkedin.com/in/dmd60484" class="dp-btn dp-btn-lg dp-btn-outline">LinkedIn</a>
+    <a href="https://github.com/dmd60484" class="dp-btn dp-btn-lg dp-btn-outline">GitHub</a>
+  </div>
+</section>
+
+<footer class="dp-foot">
+  <div class="dp-foot-inner">
+    <div class="dp-foot-brand">
+      <a class="dp-brand" href="#top">
+        <span class="dp-mark">D<span class="dp-mark-dot"></span></span>
+        <span class="dp-brand-name">Danish<span>.cyber</span></span>
+      </a>
+      <p>Building AI-powered defense systems &mdash; one tool at a time.</p>
+    </div>
+    <div class="dp-foot-cols">
+      <div>
+        <h5>Site</h5>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Find me</h5>
+        <a href="mailto:dmd60484@gmail.com">Email</a>
+        <a href="https://github.com/dmd60484">GitHub</a>
+        <a href="https://www.linkedin.com/in/dmd60484">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="dp-foot-base">
+    <span>&copy; 2026 Danish &middot; Built solo. Hosted free.</span>
+    <span class="dp-foot-mono">v0.3 &middot; showcase</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
